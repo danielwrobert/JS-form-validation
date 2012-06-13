@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Inline Form Validation</title>
+		<link rel="stylesheet" type="text/css" href="formvalidation.css">
+	</head>
+	<body>
+		<h1>A Form with Client-Side Validation</h1>
+		<form id="contactForm" action="thanks.html">
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="username">Name:</label>
+        <input id="username" class="required" name="username" />
+
+        <label for="email">Email:</label>
+        <input id="email" class="email" name="email" />
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+		<!-- <form action="thanks.html" method="post">
+					<div>
+						<label for="username">User name:
+							<input type="text" class="required" id="username" name="username">
+						</label>
+					</div>
+					<div>
+						<label for="email">Email address:
+							<input type="text" class="email" id="email" name="email">
+						</label>
+					</div>
+					<div>
+						<input type="submit" value="Submit">
+					</div>
+				</form> -->
+		<script type="text/javascript" src="formvalidation-v0.2.js"></script>
+	</body>
+</html>
